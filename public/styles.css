@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #777;
+}
+
+nav a,
+.nav-link {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+nav a:hover,
+.nav-link:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 2rem;
+}
+
+.section {
+    display: none;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section.active {
+    display: block;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+form input, form textarea, form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+}
+
+.secondary-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.secondary-button:hover {
+    background-color: #5a6268;
+}
+
+form label {
+    display: block;
+    margin: 0.75rem 0 0.25rem;
+    font-weight: 600;
+}
+
+.section-note {
+    margin: 0 0 1rem;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.item-actions {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-actions-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.item-subtitle {
+    margin-top: 0.5rem;
+    color: #555;
+    font-size: 0.92rem;
+}
+
+#usersList, #tasksList, #projectsList {
+    margin-top: 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    display: block;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: white;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+}
+
+.item button {
+    margin-left: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color: #c82333;
+}

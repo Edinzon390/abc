@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar - Sistema de Gestión de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-operation="actualizar">
+    <header>
+        <h1>Actualizar Registro</h1>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="crear.html" class="nav-link">Crear</a>
+            <a href="eliminar.html" class="nav-link">Eliminar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Actualizar</h2>
+            <p class="section-note">Selecciona la entidad y el elemento a editar. Luego modifica los datos en el formulario.</p>
+            <label for="entitySelect">Entidad</label>
+            <select id="entitySelect">
+                <option value="usuarios">Usuario</option>
+                <option value="tareas">Tarea</option>
+                <option value="proyectos">Proyecto</option>
+            </select>
+            <div id="itemList"></div>
+            <div id="formContainer"></div>
+            <div id="message" class="section-note"></div>
+        </section>
+    </main>
+
+    <script src="operations.js"></script>
+</body>
+</html>
