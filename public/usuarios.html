@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios - Sistema de Gestión de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-entity="usuarios">
+    <header>
+        <h1>Gestión de Usuarios</h1>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="tareas.html" class="nav-link">Tareas</a>
+            <a href="proyectos.html" class="nav-link">Proyectos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Usuarios</h2>
+            <p class="section-note">Selecciona la operación que deseas realizar.</p>
+            <label for="operationSelect">Operación</label>
+            <select id="operationSelect">
+                <option value="crear">Crear</option>
+                <option value="actualizar">Actualizar</option>
+                <option value="eliminar">Eliminar</option>
+            </select>
+            <div id="itemList"></div>
+            <div id="formContainer"></div>
+            <div id="message" class="section-note"></div>
+        </section>
+    </main>
+
+    <script src="operations.js"></script>
+</body>
+</html>

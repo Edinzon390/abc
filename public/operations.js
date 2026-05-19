@@ -1,5 +1,5 @@
-const operation = document.body.dataset.operation;
-const entitySelect = document.getElementById('entitySelect');
+const currentEntity = document.body.dataset.entity;
+const operationSelect = document.getElementById('operationSelect');
 const formContainer = document.getElementById('formContainer');
 const itemList = document.getElementById('itemList');
 const messageBox = document.getElementById('message');
@@ -40,13 +40,11 @@ const entityConfig = {
     }
 };
 
-let currentEntity = entitySelect ? entitySelect.value : 'usuarios';
 let selectedItem = null;
 
 async function initOperationPage() {
-    if (!entitySelect) return;
-    entitySelect.addEventListener('change', async () => {
-        currentEntity = entitySelect.value;
+    if (!operationSelect || !currentEntity) return;
+    operationSelect.addEventListener('change', async () => {
         selectedItem = null;
         clearMessage();
         await renderPage();
@@ -56,6 +54,7 @@ async function initOperationPage() {
 }
 
 async function renderPage() {
+    const operation = operationSelect ? operationSelect.value : 'crear';
     if (operation === 'crear') {
         renderCreateForm(currentEntity);
     } else if (operation === 'actualizar') {
