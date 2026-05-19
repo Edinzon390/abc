@@ -60,6 +60,7 @@ async function renderPage() {
     } else if (operation === 'actualizar') {
         await renderEditPage(currentEntity);
     } else if (operation === 'eliminar') {
+        if (formContainer) formContainer.innerHTML = '';
         await renderDeletePage(currentEntity);
     }
 }
